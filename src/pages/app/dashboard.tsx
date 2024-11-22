@@ -4,7 +4,7 @@ export const Dashboard = () => {
   return (
     <>
       <Helmet title="Dashboard" />
-      <div>dashboard</div>
+      <div>Dashboard</div>
     </>
   )
 }
