@@ -36,7 +36,7 @@ export const SignUp = () => {
   })
   const handleSignUp = async (data: SignUpForm) => {
     try {
-      registerRestaurantFn({
+      await registerRestaurantFn({
         restaurantName: data.restaurantName,
         managerName: data.managerName,
         phone: data.phone,
@@ -48,7 +48,7 @@ export const SignUp = () => {
           onClick: () => navigate(`/sign-in?email=${data.email}`),
         },
       })
-    } catch (error) {
+    } catch {
       toast.error('Erro ao cadastrar restaurante.')
     }
   }
