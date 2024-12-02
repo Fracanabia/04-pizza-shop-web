@@ -47,7 +47,7 @@ export const Pagination = ({
             disabled={pageIndex === 0}
           >
             <ChevronLeft className="h-4 w-4" />
-            <span className="sr-only">Pagina anterior</span>
+            <span className="sr-only">Página anterior</span>
           </Button>
           <Button
             onClick={() => onPageChange(pageIndex + 1)}
