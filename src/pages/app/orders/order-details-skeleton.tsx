@@ -51,10 +51,12 @@ export const OrderDetailsSkeleton = () => {
 
       <Table>
         <TableHeader>
-          <TableHead>Produto</TableHead>
-          <TableHead className="text-right">Qtd.</TableHead>
-          <TableHead className="text-right">Preço</TableHead>
-          <TableHead className="text-right">Subtotal</TableHead>
+          <TableRow>
+            <TableHead>Produto</TableHead>
+            <TableHead className="text-right">Qtd.</TableHead>
+            <TableHead className="text-right">Preço</TableHead>
+            <TableHead className="text-right">Subtotal</TableHead>
+          </TableRow>
         </TableHeader>
         <TableBody>
           {Array.from({ length: 2 }).map((_, index) => {

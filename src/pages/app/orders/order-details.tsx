@@ -86,10 +86,12 @@ export const OrderDetails = ({ orderId, open }: OrderDetails) => {
 
           <Table>
             <TableHeader>
-              <TableHead>Produto</TableHead>
-              <TableHead className="text-right">Qtd.</TableHead>
-              <TableHead className="text-right">Preço</TableHead>
-              <TableHead className="text-right">Subtotal</TableHead>
+              <TableRow>
+                <TableHead>Produto</TableHead>
+                <TableHead className="text-right">Qtd.</TableHead>
+                <TableHead className="text-right">Preço</TableHead>
+                <TableHead className="text-right">Subtotal</TableHead>
+              </TableRow>
             </TableHeader>
             <TableBody>
               {order.orderItems.map((item) => {
