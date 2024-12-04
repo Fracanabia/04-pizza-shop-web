@@ -8,7 +8,7 @@ export const getManagedRestaurantMock = http.get<
   GetManagedRestaurantResponse
 >('/managed-restaurant', () => {
   return HttpResponse.json({
-    name: 'Pizza Shop',
+    name: 'Rocket Pizza',
     id: 'uuid-pizza',
     createdAt: new Date(),
     updatedAt: new Date(),
