@@ -17,7 +17,7 @@ export const getOrderDetailsMock = http.get<
     totalInCents: 1000,
     customer: {
       name: 'John Doe',
-      email: 'john.doe@example.com',
+      email: 'johndoe@example.com',
       phone: '(11) 99999-9999',
     },
     orderItems: [
